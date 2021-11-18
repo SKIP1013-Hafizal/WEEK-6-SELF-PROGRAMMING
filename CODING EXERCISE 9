@@ -1,0 +1,45 @@
+package exercise;
+
+import java.util.Scanner;
+
+public class Exam {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter marks for your math test: ");
+        double math=sc.nextDouble();  
+        System.out.print("Enter marks for your science test: ");
+        double science=sc.nextDouble(); 
+        double average=(math+science)/2;
+        
+        System.out.println("Your math test is : " + math);
+        System.out.println("Your science test is : " + science);
+        
+        if (math>science)
+        	 System.out.println("Your math marks is higher than your science ");
+        else
+        	System.out.println("Your science marks is higher than your math ");
+        
+        if (math>50)
+        	System.out.println("You have passed your math test");
+        else
+        	System.out.println("You have failed your math test");
+        if(science>50)
+        	System.out.println("You have passed your sceince test");
+        else
+        	System.out.println("You have failed your sceince test");
+        
+        if (average >=80)
+        	System.out.println("Your grade is A");
+        else if ((average>=60)&&(average<=79))
+        	System.out.println("Your grade is B");
+        else if ((average>=50)&&(average<=59))
+        	System.out.println("Your grade is C");
+        else
+        	System.out.println("You have failed your test");
+
+	}
+
+}
